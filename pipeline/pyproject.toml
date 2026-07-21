@@ -1,0 +1,19 @@
+[project]
+name = "pipeline"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.4.2",
+    "pandas>=3.0.3",
+    "psycopg2-binary>=2.9.12",
+    "psycopg[binary,pool]>=3.3.4",
+    "pyarrow>=25.0.0",
+    "sqlalchemy>=2.0.51",
+    "tqdm>=4.69.0",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "pgcli>=4.5.0",
+]
